@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram Login</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial,  sans-serif;
+
+            }
+            body{
+                background-color: #fafafa;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+
+            }
+            .instagram-brand{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .instagram-brand h1{
+                font-family: 'Brush Script MT', cursive;
+                color: #000;
+                font-size: 3rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .instagram-brand p{
+                font-size: 1.2rem;
+                color: #606770;
+            }
+            .login-container {
+                background: white;
+                width: 380px;
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #dbdbdb;
+                text-align: center;
+            }
+            .input-group {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .input-group input {
+                width: 100%;
+                padding: 12px;
+                font-size: 1rem;
+                border: 1px solid #dbdbdb;
+                border-radius: 6px;
+                background-color: #fafafa;
+            }
+            .login.btn{
+                width: 100%;
+                padding: 12px;
+                font-size: 1rem;
+                font-weight: bold;
+                background-color: #0095f6;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            .login.btn:hover{
+                background-color: #007acc;
+            }
+            .divider{
+                width: 100%;
+                height: 1px;
+                background: #dbdbdb;
+                margin: 15px 0;
+            }
+            .facebook-login{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #0095f6;
+                font-size: 0.9rem;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .facebook-login img{
+                margin-right: 8px;
+            }
+            .forgot-password{
+                display: block;
+                margin-top: 10px;
+                font-size: 0.9rem;
+                color: #00376b;
+                text-decoration: none;
+
+            }
+            .forgot-password:hover{
+                text-decoration: underline;
+            }
+            .register-section{
+                text-align: center;
+                font-size: 0.9rem;
+                margin-top: 20px;
+            }
+            .register-section a{
+                color: #0095f6;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .register-section a:hover{
+                text-decoration: underline;
+
+            }
+            .download-apps{
+                text-align: center;
+                margin-top: 20px;
+
+            }
+            .download-apps img{
+                width: 135px;
+                margin: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "instagram-brand">
+            <h1>Instagram</h1>
+        </div>   
+        <div class = "login-container">
+            <form>
+                <div class = "input-group">
+                    <input type="text" placeholder="Phone number, username, or email">
+                </div>
+                <div class = "input-group">
+                    <input type="password" placeholder="Password">
+                </div>
+                <button class = "login btn"> Log In</button>
+                <div class = "divider"></div>
+                <div class = "facebook-login">
+                 <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficons8.com%2Ficon%2F118497%2Ffacebook&psig=AOvVaw0pKrnbMGyPnomLm0KAjGkO&ust=1738421798574000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJibrICcoIsDFQAAAAAdAAAAABAE" alt="Facebook"> Log in with Facebook</div>
+                 <a href="#" class ="forgot-password">Forgotten Password?</a>
+            </form>
+        </div>
+        <div class = "register-section">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+        <div class = "download-apps">
+            <p>Download Apps.</p>
+            <img src="Instagram/appstore.png", alt="App Store">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ficons-logos-emojis%2Fstore-badges%2Fgoogle-play-badge&psig=AOvVaw31fzS1jUIq17wC73lIwQ5J&ust=1738422341164000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDAtIKeoIsDFQAAAAAdAAAAABAY", alt="Google Play">
+     </body>
+</html>

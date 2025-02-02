@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microsoft</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+            }
+            header{
+                background: #0078D4;
+                color: white;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000;}
+                .header-logo{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                nav ul{
+                    list-style: none;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;}
+                    nav ul li{
+                        margin-left: 20px;
+                    }
+                    nav ul li a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 16px;
+                        transition: 0.3s;
+                    }
+                    nav ul li a:hover{
+                        text-decoration: underline;
+                    }
+                .hero{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 50px;
+                    background: linear-gradient(to right, #0046a6, #0078D4);
+                    color: white;
+                    text-align: left;
+                }
+                .hero-content{
+                    max-width: 500px;
+                }
+                .hero-content h2{
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                }
+                .hero-content p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                .hero button{
+                    background: white;
+                    color: #0078D4;
+                    padding: 10px 20px;
+                    border: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    border-radius: 5px;
+                }
+                .hero button:hover{
+                    background: #005bb5;
+                    color:white;
+                }
+                .hero-image img{
+                    max-width: 400px;
+                    border-radius: 10px;
+                }
+                .products{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                    padding: 20px;}
+                    .product{
+                        background: white;
+                        padding: 20px;
+                        border-radius: 8px;
+                        text-align: center;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                        transition: 0.3s;
+                    }
+                    .product:hover{
+                        transform: scale(1.05);
+
+                    }
+                    .product img{
+                        max-width: 150px;
+                        border-radius: 5px;
+                    }
+                    .product h3{
+                        font-size: 20px;
+                        margin: 10px 0;
+                    }
+                    .product p{
+                        font-size: 16px;
+                        color: #666;
+                    }
+                    .product button{
+                        background: #0078D4;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        font-size: 14px;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        border-radius: 5px;
+                    }
+                    .product button:hover{
+                        background: #005bb5;
+                    }
+                    .footer{
+                        text-align: center;
+                        padding: 15px;
+                        background: #222;
+                        color: white;
+                        margin-top: 20px;
+                    }
+                    @media(max-width: 768px){
+                        .hero{
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                        .hero-image img{
+                            max-width: 300px;
+                            margin-top: 20px;
+                        }
+                        nav ul{
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                            nav ul li{
+                                margin: 10px 0;
+                            }
+                    }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">Microsoft</div>
+            <nav>
+                <ul>
+                    <li><a href="#">All Microsoft> </a></li>
+                    <li><a href="#">Search🔎</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Meet Surface Pro</h2>
+                <p>This laptop's unrivalled flexibility and Al features like Live Captions and
+                    Cocreator enable you to do more than you ever imagined.</p>
+                <button>Shop Now</button>
+
+            </div>
+            <div class="hero-image">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fd%2Fsurface-laptop-for-business-copilot-pc%2F8tkcbz02bdvk&psig=AOvVaw292hXhLz8VSZA91aP5FOBy&ust=1738496889640000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjYneGzoosDFQAAAAAdAAAAABAE" alt="Surface Pro">
+            </div>
+        </section>
+        <section class="products">
+            <div class="product">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fd%2Fsurface-laptop-for-business-copilot-pc%2F8tkcbz02bdvk&psig=AOvVaw292hXhLz8VSZA91aP5FOBy&ust=1738496889640000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjYneGzoosDFQAAAAAdAAAAABAE" alt="Surface Laptop">
+                <h3>Surface Laptop, Copilot+PC</h3>
+                <p>Unlock Al features like Live Captions and Cocreator with this exceptionally powerful laptop.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="product">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshop.kz%2Foffer%2Figrovaya-konsol-xbox-series-s-512-gb-white-1-geympad%2F&psig=AOvVaw3Rng8tLnU5nWo-87UpqZtU&ust=1738497703592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCmpOO2oosDFQAAAAAdAAAAABAE" alt="Xbox Series X">
+                <h3>Xbox Series X</h3>
+                <p>Next-gen performance in the smallest Xbox
+                    ever.</p>
+                    <button>Shop Xbox Series S</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xbox.com%2Fen-GB%2Faccessories%2Fcontrollers%2Fxbox-wireless-controller&psig=AOvVaw3saafiF7XDX02CH0q7tcIp&ust=1738598212712000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCrzbmtpYsDFQAAAAAdAAAAABAE", alt="Xbox controllers">
+                    <h3>Xbox controllers</h3>
+                    <p>Elite, wireless, adaptive find the controller that fits your style of play.</p>
+                    <button>Shop Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fragequit.gr%2Fen%2Fnews%2Fitem%2Fxbox-developer-direct-2024-announcements%2F&psig=AOvVaw2FoVf7Sb5sTbELX8ZAI23-&ust=1738598556449000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDc0cSupYsDFQAAAAAdAAAAABAE",alt="Xbox presents
+                    Developer_Direct">
+                    <h3>Xbox presents
+                        Developer_Direct</h3>
+                        <p>Tune in January 23 at 10 AM PT to hear directly from the developers.</p>
+                        <button>Learn more</button>
+                </div>
+        </section>
+        <footer>
+            <p>©️ 2025 Microsoft.All rights reserved</p>
+        </footer>
+    </body>
+</html>
